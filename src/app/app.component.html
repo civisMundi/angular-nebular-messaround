@@ -1,9 +1,13 @@
-<header>
-    COUCOU HEADER
-</header>
+<nb-layout>
+    <nb-layout-header fixed>
+        <a href="#" (click)="toggle()"><i class="nb-menu"></i></a>
+    </nb-layout-header>
 
-<router-outlet></router-outlet>
+    <nb-sidebar></nb-sidebar>
 
-<footer>
-    FOOTER
-</footer>
+    <nb-layout-column>
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+    
+    <nb-layout-footer>Contact</nb-layout-footer>
+</nb-layout>
